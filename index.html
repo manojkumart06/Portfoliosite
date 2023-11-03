@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>portfolio-site</title>
+		<link rel="shortcut icon" href="Media/resume_icon.png" type="image/x-icon" />
+		<script src="https://kit.fontawesome.com/38953cd490.js" crossorigin="anonymous"></script>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+			integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="Resume.css" />
+		<script defer src="Resume.js"></script>
+		<script defer src="skills.js"></script>
+		<!-- <script defer src="scroll-progress.js"></script> -->
+		<script defer src="scroll_progress.js"></script>
+	</head>
+	<body>
+		<div id="scroll-progress-count">
+			<span><span id="scrolled">0</span>% Viewed</span>
+		</div>
+		<div class="scroll-progress">
+			<div class="scroll-progress-bar"></div>
+		</div>
+		<header id="body-header">
+			<nav>
+				<div class="dropdown-menu text-right">
+					<div class="bars">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="dropdown-list nav-menu">
+						<ul class="no-list-style">
+							<li>
+								<a href="#"> Home </a>
+							</li>
+							<li>
+								<a href="#about"> About </a>
+							</li>
+							<li>
+								<a href="#skills"> Skills </a>
+							</li>
+							<li>
+								<a href="#experience">Experience</a>
+							</li>
+							<li>
+								<a href="#education">Education</a>
+							</li>
+							<li>
+								<a href="#portfolio">Portfolio</a>
+							</li>
+							<li>
+								<a href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<ul class="no-list-style horizontal-list text-center nav-menu">
+					<li>
+						<a href="#"> Home </a>
+					</li>
+					<li>
+						<a href="#about"> About </a>
+					</li>
+					<li>
+						<a href="#skills"> Skills </a>
+					</li>
+					<li>
+						<a href="#experience">Experience</a>
+					</li>
+					<li>
+						<a href="#education">Education</a>
+					</li>
+					<li>
+						<a href="#portfolio">Portfolio</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="name-social-container">
+				<div class="text-center">
+					<h1 id="my-name" class ="fa-beat">Manoj Kumar</h1>
+				</div>
+				<div>
+					<ul
+						class="no-list-style horizontal-list text-center social-icons"
+					>
+						<li>
+							<a href="https://www.linkedin.com/in/manoj-kumar-19441017b/">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://stackoverflow.com/users/22516959/manoj-kumar">
+								<i class="fab fa-stack-overflow"></i>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:manojkumar06t@gmail.com">
+								<i class="fab fa-google-plus-g"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://instagram.com/_manojgowda__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==">
+								<i class="fa-brands fa-instagram"></i>
+							
+							</a>
+						</li>
+						<li>
+							<a href="https://www.quora.com/profile/Manoj-Kumar-49598">
+								<i class="fab fa-quora"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section id="about">
+				<div id="my-image">
+					<img
+						src="Media/dp.png"
+					/>
+				</div>
+
+				<div id="about-para">
+					<p>
+						Greetings! <span class="text-highlight">I'm Manoj,</span> a dedicated <span class="text-highlight">Full Stack Web Developer</span> renowned for sculpting remarkable digital experiences. With an unwavering commitment
+						to precision and a profound passion for unraveling complex challenges, I specialize in breathing life into websites and web applications by seamlessly 
+						blending artistic creativity with rock-solid technical prowess.						
+					</p>
+				</div>
+			</section>
+
+			<section id="skills">
+				<h1 class="section-heading mb75px">
+					<span>
+						<i class="fas fa-chalkboard-teacher"></i>
+					</span>
+					<span> SKILLS </span>
+				</h1>
+
+				<div class="skills-display">
+					<div class="skill-progress">
+						<div class="fifty-percent mb-blue" data-bar-width="55">
+							<div class="skill-name">
+								<span> Python </span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div
+							class="eighty-five-percent mb-orange"
+							data-bar-width="85"
+						>
+							<div class="skill-name">
+								<span> HTML </span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div
+							class="eighty-percent mb-light-purple"
+							data-bar-width="85"
+						>
+							<div class="skill-name">
+								<span> CSS </span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div class="fifty-percent mb-teal" data-bar-width="55">
+							<div class="skill-name">
+								<span> Javascript </span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div class="fifty-percent mb-blue" data-bar-width="55">
+							<div class="skill-name">
+								<span> NodeJs </span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div
+							class="eighty-percent mb-light-purple"
+							data-bar-width="85"
+						>
+							<div class="skill-name">
+								<span> C </span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div class="fifty-percent mb-blue" data-bar-width="55">
+							<div class="skill-name">
+								<span>Datastructures</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div
+							class="eighty-percent mb-light-purple"
+							data-bar-width="85"
+						>
+							<div class="skill-name">
+								<span> MongoDB </span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div
+							class="eighty-percent mb-lightgreen"
+							data-bar-width="85"
+						>
+							<div class="skill-name">
+								<span> SQL </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="experience">
+				<h1 class="section-heading mb75px">
+					<span>
+						<i class="fas fa-briefcase"></i>
+					</span>
+					<span> Work Experience </span>
+				</h1>
+
+				<div class="timeline">
+					<div class="timeline-box">
+						<div class="timeline-container">
+							<div class="timeline-logo">
+								<img
+									src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+								/>
+							</div>
+							<h3 class="experience-designation m0 m-blue">
+								Full Stack Web Developer
+							</h3>
+							<h4 class="experience-company-name">Capgemini</h4>
+							<h5 class="experience-duration m0">
+								September 2021 - present 2023
+							</h5>
+
+							<p class="experience-description text-justify">
+								I have accrued two years of valuable experience at Capgemini, 
+								where I honed my skills in both frontend and backend development.
+								 My portfolio showcases my proficiency in crafting seamless and efficient web solutions 
+								 that cater to diverse client needs.
+							</p>
+						</div>
+					</div>
+
+
+					<div id="timeline-divider">
+						<div class="timeline-traveller">
+							<div>
+								<i class="fas fa-plane"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="education">
+				<h1 class="section-heading mb75px">
+					<span>
+						<i class="fas fa-graduation-cap"></i>
+					</span>
+					<span> Education </span>
+				</h1>
+
+				<div class="timeline">
+					<div class="timeline-box left">
+						<div class="timeline-container">
+							<div class="timeline-logo">
+								<img
+									src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+								/>
+							</div>
+							<h3 class="experience-designation m0 m-blue">B.E
+								(Computer
+								Science)</h3>
+							<h4 class="experience-company-name">VTU (City Engneering College)</h4>
+							<h5 class="experience-duration m0">
+								2017 - 2021
+							</h5>
+
+							<p class="experience-description text-justify">
+								I hold a Bachelor of Engineering degree in Computer Science from VTU's City Engineering College, graduating in 2021. 
+								This educational background has equipped me with a strong foundation in computer science and technology.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-box right">
+						<div class="timeline-container">
+							<div class="timeline-logo">
+								<img
+									src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+								/>
+							</div>
+							<h3 class="experience-designation m0 m-blue">PUC</h3>
+							<h4 class="experience-company-name">KEA (Vidhyadri PU college)</h4>
+							<h5 class="experience-duration m0">
+								2015 - 2017
+							</h5>
+							<p class="experience-description text-justify">
+								I completed my 11th and 12th grade education at KEA's Vidhyadri PU College from 2015 to 2017,
+								 laying the academic groundwork for my subsequent pursuit of a Science background.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-box left">
+						<div class="timeline-container">
+							<div class="timeline-logo">
+								<img
+									src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png"
+								/>
+							</div>
+							<h3 class="experience-designation m0 m-blue">SSLC</h3>
+							<h4 class="experience-company-name">KSEEB (New Horizon High School)</h4>
+							<h5 class="experience-duration m0">
+								2015 passed out
+							</h5>
+
+							<p class="experience-description text-justify">
+								I graduated with my SSLC from KSEEB's New Horizon High School in 2015, establishing a strong educational
+								 footing for my academic journey. This milestone marked the beginning of my educational and personal growth.
+							</p>
+						</div>
+					</div>
+
+					<div id="timeline-divider">
+						<div class="timeline-traveller">
+							<div>
+								<i class="fas fa-car-side"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="portfolio">
+				<h1 class="section-heading mb75px">
+					<span>
+						<i class="fas fa-th-list"></i>
+					</span>
+					<span> Portfolio </span>
+				</h1>
+
+				<div id="portfolio-container">
+					<div class="portfolio-image-container">
+						<img
+							src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png"
+						/>
+						<div class="portfolio-details">
+							<p>Write here basic details about the project.</p>
+						</div>
+					</div>
+					<div class="portfolio-image-container">
+						<img
+							src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png"
+						/>
+						<div class="portfolio-details">
+							<p>Web app for Meal recipe search, details, favorites, and easy access.</p>
+						</div>
+					</div>
+					<div class="portfolio-image-container">
+						<img
+							src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png"
+						/>
+						<div class="portfolio-details">
+							<p>Write here basic details about the project.</p>
+						</div>
+					</div>
+					<div class="portfolio-image-container">
+						<img
+							src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png"
+						/>
+						<div class="portfolio-details">
+							<p>Write here basic details about the project.</p>
+						</div>
+					</div>
+					<div class="portfolio-image-container">
+						<img
+							src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png"
+						/>
+						<div class="portfolio-details">
+							<p>Write here basic details about the project.</p>
+						</div>
+					</div>
+					<div class="portfolio-image-container">
+						<img
+							src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png"
+						/>
+						<div class="portfolio-details">
+							<p>Write here basic details about the project.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<h1 class="section-heading mb50px">
+					<span>
+						<i class="far fa-address-card"></i>
+					</span>
+					<span> Contact </span>
+				</h1>
+				<div id="contact-container">
+					<div id="contact-form-container">
+						<form id="contact-form">
+							<input
+								id="input-name"
+								name="name"
+								type="text"
+								placeholder="Your Name"
+							/>
+							<input
+								id="input-email"
+								name="input-email"
+								type="text"
+								required
+								placeholder="Your Email"
+							/>
+							<textarea
+								id="input-message"
+								name="input-message"
+								rows="2"
+								cols="40"
+								placeholder="Message"
+							></textarea>
+							<button class="sub-btn" type="submit">SEND MESSAGE</button>
+						</form>
+					</div>
+					<div id="my-details-container">
+						<h3>Get In touch</h3>
+						<p>
+							Connecting the dots between creativity and communication,
+							 I'm your go-to professional to bring your vision to life. Let's collaborate and create something extraordinary.
+						</p>
+
+						<h3>My Address</h3>
+						<div class="my-details-info-container">
+							<i class="fas fa-map-marker-alt"></i>
+							<span>Bengaluru, India</span>
+						</div>
+						<div class="my-details-info-container">
+							<i class="fas fa-mobile-alt"></i>
+							<span>8310147887</span>
+						</div>
+						<div class="my-details-info-container">
+							<i class="far fa-envelope"></i>
+							<span>manojkumar06t@gmail.com</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center social-icons">
+					<ul class="no-list-style horizontal-list">
+						<li>
+							<a href="https://www.linkedin.com/in/manoj-kumar-19441017b/">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://stackoverflow.com/users/22516959/manoj-kumar" target="_blank">
+								<i class="fab fa-stack-overflow"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="mailto:manojkumar06t@gmail.com" target="_blank">
+								<i class="fab fa-google-plus-g"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.facebook.com">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.quora.com/profile/Manoj-Kumar-49598" target="_blank">
+								<i class="fab fa-quora"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
