@@ -223,6 +223,57 @@ section:nth-child(2n + 1) {
 	margin-left: 10px;
 	vertical-align: middle;
 }
+/*skills bg colors*/
+.python{
+	background-color: #f6cf60;
+}
+.html{
+	background-color: #dd4b25;
+}
+.css{
+	background-color: #254bdd;
+}
+.javascript{
+	background-color: #efd81d;
+}
+.nodejs{
+	background-color: #77b162;
+}
+.c{
+	background-color:#6295cb;
+}
+.datastructures{
+	background-color:#146be6;
+}
+.mongodb{
+	background-color:#03e461;
+}
+.sql{
+	background-color:#a6b2ba;
+}
+/*tools bg colors*/
+.react{
+	background-color: #01e8bc;
+}
+.bootstrap{
+	background-color: #8512f3 ;
+}
+.expressjs{
+	background-color: #494949;
+}
+.git{
+	background-color: #f54d27;
+}
+.github{
+	background-color: black;
+}
+.vscode{
+	background-color:#40a7ea;
+}
+.jira{
+	background-color:#146be6;
+}
+
 
 /* Work Experience */
 
