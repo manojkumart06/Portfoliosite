@@ -388,39 +388,83 @@ section:nth-child(2n + 1) {
 }
 
 .portfolio-image-container {
-	max-width: 300px;
-	overflow: hidden;
-	margin: 30px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-	cursor: pointer;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .portfolio-image-container img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
 }
 
 .portfolio-details {
-	transition: all 0.5s ease-in-out;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	color: transparent;
-	text-align: center;
-	padding: 10px;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+}
+
+.portfolio-details a {
+	display: inline-block;
+	outline: 0;
+	border:0;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	color: #000;
+	background: #fff;
+	line-height: 10px;
+	border-radius: 40px;
+	padding: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 100px;
+	margin-left: 90px;
+	box-shadow: rgb(128, 0, 255) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+	transition: all 0.2s;
+	
+}
+.portfolio-details a:hover{
+		box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+		transform: scale(1.01);
+			
 }
 
 .portfolio-image-container:hover {
-	box-shadow: 0 0 20px #74adc8;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.portfolio-image-container:hover .portfolio-details {
-	background-color: #80808078;
-	color: white;
+.portfolio-image-container:hover img {
+    transform: scale(1.1);
 }
+
+ .portfolio-details:hover{
+	background: url(Media/hover-img.jpg);
+	background-position: 70%;
+	background-size: cover;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+
+
 
 /* Contact Form */
 
