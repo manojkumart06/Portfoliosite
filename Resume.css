@@ -73,8 +73,9 @@ main {
 }
 
 .no-list-style li {
-	font-weight: 100;
-	font-size: 0.9rem;
+	font-weight: 500;
+	font-size: 1.1rem;
+	font-family: cursive;
 }
 
 .no-list-style li a {
@@ -98,7 +99,7 @@ main {
 }
 
 .nav-menu li a:hover {
-	color: lightgrey;
+	color: rgb(76, 235, 124);
 	border-bottom: 1px solid black;
 }
 
@@ -585,6 +586,7 @@ button:focus {
 
 .text-center {
 	text-align: center;
+	font-family: cursive;
 }
 
 .text-justify {
