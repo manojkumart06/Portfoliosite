@@ -1,30 +1,26 @@
-var navMenuAnchorTags = document.querySelectorAll(".nav-menu a");
-var interval;
+// Height of your fixed header (tweak if needed)
+const HEADER_OFFSET = 80;
 
-for (var i = 0; i < navMenuAnchorTags.length; i++) {
-	navMenuAnchorTags[i].addEventListener("click", function (event) {
-		event.preventDefault();
-		var targetSectionID = this.textContent.trim().toLowerCase();
-		console.log(this.textContent);
-		var targetSection = document.getElementById(targetSectionID);
-		console.log(targetSection);
-		//    interval = setInterval(scrollVertically, 20, targetSection);
+document.querySelectorAll('.nav-menu a').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    const href = a.getAttribute('href') || '';
 
-		interval = setInterval(function () {
-			scrollVertically(targetSection, targetSectionID);
-		}, 20);
-	});
-}
+    // Let external links work normally
+    if (!href.startsWith('#')) return;
 
-function scrollVertically(targetSection, targetSectionID) {
-	var targetSectionCoordinates = targetSection.getBoundingClientRect();
-	if (targetSectionCoordinates.top <= 0) {
-		clearInterval(interval);
-		return;
-	}
-	if (targetSectionID === "contact" && targetSectionCoordinates.top <= 80) {
-		clearInterval(interval);
-		return;
-	}
-	window.scrollBy(0, 50);
-}
+    e.preventDefault();
+
+    // Handle "#" → scroll to top
+    const id = href.slice(1);
+    if (!id) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    const y = target.getBoundingClientRect().top + window.pageYOffset - HEADER_OFFSET;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
